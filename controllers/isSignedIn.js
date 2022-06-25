@@ -1,4 +1,4 @@
-const handleIsSignedIn = async(req, res, client, users, jwt, ObjectId) => {
+const handleIsSignedIn = (client, users, jwt, ObjectId) => async (req, res) => {
     const { authorization } = req.headers;
     //let id = jwt.verify(authorization, 'secret');
     jwt.verify(authorization, process.env.SECRET, async function(err, decoded) {

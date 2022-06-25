@@ -1,4 +1,4 @@
-const handleGetMovies = async(req, res, client, movies) => {
+const handleGetMovies = (client, movies) => async(req, res) => {
     let IMDB = { IMDBraiting: -1 };  
     let MMDB = { Rating: -1 };  
     try{

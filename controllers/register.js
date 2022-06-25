@@ -1,4 +1,4 @@
-const handleRegister = async (req, res, client, users, jwt) => {
+const handleRegister = (client, users, jwt) => async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
     if(username != "" && password != ""){

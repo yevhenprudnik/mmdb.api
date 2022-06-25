@@ -1,4 +1,4 @@
-const handleGetRecommendations = async(req, res, client, movies) => {
+const handleGetRecommendations = (client, movies) => async(req, res) => {
     let IMDB = { IMDBraiting: -1 };  
     let MMDB = { Rating: -1 };  
     let category = {$all: req.body.category}

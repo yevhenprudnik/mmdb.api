@@ -1,4 +1,4 @@
-const handleRateFilm = async(req, res, client, movies, users, jwt, ObjectId) => {
+const handleRateFilm = (client, movies, users, jwt, ObjectId) => async (req, res) => {
     let movie = req.body.movie;
     let rate = req.body.rate;
     let token = req.body.token;
